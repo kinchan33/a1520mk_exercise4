@@ -7,7 +7,12 @@ module A1520mkExercise4
       a = Date.new(1962, 7, 9)
       b = Date.today
       d = b - a
-      puts (d/365).to_i
+      return (d/365).to_i
+    end
+    def self.getBMI(wkg, tcm=170)
+      tall = tcm/100.0
+      bmi = wkg/(tall*tall)
+      return bmi
     end
   end
 end
